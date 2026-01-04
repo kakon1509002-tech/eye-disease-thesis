@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # 1. Load the "Brain" you just trained
-model = tf.keras.models.load_model(r"D:\Asif\Work\Previous Laptop\GB\S- thesis\eye_disease_model.h5")
+model = tf.keras.models.load_model("eye_disease_model.h5")
 class_names = ['Cataract', 'Diabetic Retinopathy', 'Glaucoma', 'Normal']
 
 # 2. Page Styling
@@ -34,4 +34,5 @@ if uploaded_file is not None:
 
     # 6. Show Results
     st.success(f"Diagnosis: **{result}**")
+
     st.info(f"Confidence Level: **{confidence:.2f}%**")
