@@ -21,7 +21,7 @@ class_names = ['Cataract', 'Diabetic Retinopathy', 'Glaucoma', 'Normal']
 st.title("👁️ Eye Disease Detection System")
 st.write("Upload a retinal fundus image to get a diagnosis and confidence score.")
 
-uploaded_file = st.file_file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     # Display the image
